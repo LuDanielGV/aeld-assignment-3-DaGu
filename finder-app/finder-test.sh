@@ -34,7 +34,7 @@ rm -rf "${WRITEDIR}"
 # create $WRITEDIR if not assignment2
 assignment=`cat ../conf/assignment.txt`
 
-if [ ${assignment} = 'assignment2' ]
+if [ ${assignment} = 'assignment3' ]
 then
 	mkdir -p "$WRITEDIR"
 
@@ -50,9 +50,9 @@ then
 fi
 
 #This section applies only to assignment 2
-echo "Removing the old writer utility and compiling as a native application"
-make clean
-make
+#echo "Removing the old writer utility and compiling as a native application"
+#make clean
+#make
 
 for i in $( seq 1 $NUMFILES)
 do
